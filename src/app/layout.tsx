@@ -11,16 +11,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="w-full p-5 bg-slate-600 text-center">
-          <h1>Header</h1>
+        <header className="bg-slate-800 text-lg text-center w-full p-5 text-white">
+          Header
         </header>
-        <main>
-          {children}
-        </main>
-        <footer className="w-full p-5 bg-slate-600 text-center">
-          <h1>Footer</h1>
+        <main className="p-5">{children}</main>
+        <footer className="bg-slate-800 text-lg text-center w-full p-5 text-white">
+          Footer
         </footer>
       </body>
     </html>
-  )
+  );
 }
