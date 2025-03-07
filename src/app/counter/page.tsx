@@ -1,6 +1,4 @@
-"use client"
-
-import { useState } from "react";
+import Counter from "./counter"
 
 export const metadata = {
     title: "This is Metadata in Client Component",
@@ -8,10 +6,5 @@ export const metadata = {
 }
 
 export default function CounterPage() {
-    const [val, setVal] = useState(0)
-    return(<>
-        <h1>Value {val}</h1>
-        <button onClick={() => setVal(val+1)}>+</button>
-        <button onClick={() => setVal(val-1)}>-</button>
-    </>)
+    return <Counter />
 };
