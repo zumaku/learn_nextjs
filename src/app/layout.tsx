@@ -20,7 +20,7 @@ export default function RootLayout({
         <header className="bg-slate-800 text-lg text-center w-full p-5 text-white">
           Header
         </header>
-        <main className="p-5">{children}</main>
+        {children}
         <footer className="bg-slate-800 text-lg text-center w-full p-5 text-white">
           Footer
         </footer>
