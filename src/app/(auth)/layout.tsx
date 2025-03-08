@@ -24,11 +24,7 @@ export default function AuthLayout({
     <>
       {navLinks.map((link) => (
         <Link key={link.name} href={link.href}>
-          {pathName === link.href && pathName !== "/" ? (
-            <h2>{link.name}</h2>
-          ) : (
-            <h4>{link.name}</h4>
-          )}
+            <h2 className={pathName === link.href && pathName !== "/" ? `font-bold text-lg underline` : `text-md underline`}>{link.name}</h2>
         </Link>
       ))}
       {children}
