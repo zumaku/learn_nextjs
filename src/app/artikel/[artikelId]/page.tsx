@@ -1,11 +1,13 @@
+"use client"
 
+import { use } from "react"
 
-export default async function ArtikelDetial({params, searchParams}: {
+export default function ArtikelDetial({params, searchParams}: {
     params: Promise<{artikelId: string}>,
     searchParams: Promise<{sembarang?: string}>
 }) {
-    const {artikelId} = await params
-    const {sembarang = "id"} = await searchParams
+    const {artikelId} = use(params)
+    const {sembarang = "id"} = use(searchParams)
 
     return(<>
         <h1>Artikel Detail</h1>
