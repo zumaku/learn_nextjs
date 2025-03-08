@@ -1,13 +1,10 @@
-'use client'
- 
-import { useSearchParams } from 'next/navigation'
- 
-export default function SearchBar() {
-  const searchParams = useSearchParams()
- 
-  const search = searchParams.get('search')
- 
-  // URL -> `/dashboard?search=my-project`
-  // `search` -> 'my-project'
-  return <>Search: {search}</>
+"use client"
+
+import { useSearchParams } from "next/navigation";
+
+export default function ArtikelDetail() {
+  const search = useSearchParams().get("nyari")
+  return (
+    <div>Nyari ini: {search}</div>
+  );
 }
