@@ -12,13 +12,15 @@ export default async function FeedDetail({
 
     return (
         <Modal>
-            <h1 className="text-4xl text-center font-bold">{data.name}</h1>
-            <Image
-                alt={data.name}
-                src={data.src}
-                className="w-60 my-6"
-            />
-            <p className="mb-20">{data.description}</p>
+            <div className="flex flex-col items-center bg-white p-3 rounded-2xl">
+                <h1 className="text-4xl text-center font-bold">{data.name}</h1>
+                <Image
+                    alt={data.name}
+                    src={data.src}
+                    className="w-60 my-6"
+                />
+                <p className="mb-20">{data.description}</p>
+            </div>
         </Modal>
     );
 }
