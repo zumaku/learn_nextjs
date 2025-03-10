@@ -1,13 +1,13 @@
 import Card from "@/components/card";
 import Link from "next/link";
 
-export default function Notificaions() {
+export default function ArchiveNotificaions() {
     return (
         <div>
             <Card className="flex-col" >
-                <h3 className="font-bold text-lg">Notifications</h3>
+                <h3 className="font-bold text-lg">Archive Notifications</h3>
                 <div>
-                    <Link href={"/dashboard/archive"}>Show Archive</Link>
+                    <Link href={"/dashboard"}>Hide Archive</Link>
                 </div>
             </Card>
         </div>
