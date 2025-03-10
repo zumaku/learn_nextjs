@@ -1,7 +1,5 @@
-export default function DashboardPage() {
+export default function Page() {
     return (
-        <div>
-            <h1 className="w-full p-5 text-center font-bold text-3xl">Dashboard Page</h1>
-        </div>
+        <h1 className="text-2xl font-bold text-center">Dashboard</h1>
     );
 }

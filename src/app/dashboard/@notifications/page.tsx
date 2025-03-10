@@ -1,10 +1,10 @@
 import Card from "@/components/card";
 
-export default function LineChart() {
+export default function Notificaions() {
     return (
         <div>
             <Card >
-                <h3 className="font-bold text-lg">Line Chart</h3>
+                <h3 className="font-bold text-lg">Notifications</h3>
             </Card>
         </div>
     );
