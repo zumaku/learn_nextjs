@@ -31,8 +31,8 @@ const ErrorSimulator = ({
 export const ErrorWrapper = ({children}: WrapperProps) => {
     return (
         <div>
-            <ErrorSimulator message="Simulated Error in root layout!" />
             {children}
+            <ErrorSimulator message="Simulated Error in root layout!" />
         </div>
     )
 }
