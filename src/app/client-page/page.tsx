@@ -1,9 +1,10 @@
-"use client"
+// app/client-route/page.tsx
+"use client";
 
-import ImageSlider from "@/components/ImageSlider"
+import { useTheme } from "@/components/ThemeProvider";
 
-export default function ClientPage() {
-    return (
-        <ImageSlider />
-    );
+export default function ClientRoutePage() {
+  const theme = useTheme();
+
+  return <h1 style={{ color: theme.colors.secondary }}>Client Route Page</h1>;
 }
