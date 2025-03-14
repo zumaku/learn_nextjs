@@ -1,9 +1,8 @@
-import { ServerFuncionExample } from "@/utils/serverFunctionExample";
+import ImageSlider from "@/components/ImageSlider"
 
 export default function ServerPage() {
-    const result = ServerFuncionExample()
     
     return (
-        <h1>Ini Server Page | {result}</h1>
+        <ImageSlider />
     );
 }

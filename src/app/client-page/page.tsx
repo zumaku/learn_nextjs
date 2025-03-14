@@ -1,10 +1,9 @@
 "use client"
 
-import { ServerFuncionExample } from "@/utils/serverFunctionExample";
+import ImageSlider from "@/components/ImageSlider"
 
 export default function ClientPage() {
-    const result = ServerFuncionExample()
     return (
-        <h1>Client Page | {result}</h1>
+        <ImageSlider />
     );
 }
