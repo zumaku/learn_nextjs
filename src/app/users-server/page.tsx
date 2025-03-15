@@ -9,12 +9,13 @@ type User = {
 };
 
 const fetchUsers = async (): Promise<User[]> => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/usersasdasdas");
   if (!res.ok) throw new Error("Failed to fetch users");
   return res.json();
 };
 
 const UsersServer: FC = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000))
   const users = await fetchUsers();
 
   return (
