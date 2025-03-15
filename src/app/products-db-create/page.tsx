@@ -1,3 +1,4 @@
+import SubmitButton from "@/components/SubmitButton";
 import { addProduct } from "@/prisma-db";
 import { redirect } from "next/navigation";
 
@@ -21,7 +22,7 @@ export default function ReactFormPage() {
                 <input name="title" className="w-full mb-2 p-1 rounded-lg" type="text" placeholder="Title" required />
                 <input name="price" className="w-full mb-2 p-1 rounded-lg" type="number" placeholder="Price" required />
                 <textarea name="description" className="w-full mb-2 p-1 rounded-lg" placeholder="Description"></textarea>
-                <button className="p-2 rounded bg-blue-600">Sumbit</button>
+                <SubmitButton />
             </form>
         </div>
     );
